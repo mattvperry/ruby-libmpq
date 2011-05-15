@@ -15,11 +15,11 @@
 
 static VALUE mpq_mod = Qnil;                                // MPQ Module
 static VALUE archive_class = Qnil;                          // Archive Class
-void Init_mpq();                                            // Initialization
+void Init_mpq_read();                                       // Initialization
 static VALUE mpq_read_file(VALUE self, VALUE file_name);    // read_file function
 
 // Function that is called by Ruby to initialize the extention
-void Init_mpq()
+void Init_mpq_read()
 {
     // Define MPQ::Archive class and a read_file function
     mpq_mod = rb_define_module("MPQ");
@@ -42,6 +42,7 @@ static VALUE mpq_read_file(VALUE self, VALUE file_name)
     VALUE archive_path = rb_funcall(self, rb_intern("path"), 0);
 
     // Open the archive, throw an exception if a failure occurs
+    libmpq__init();
     int return_code = libmpq__archive_open(&archive, RSTRING_PTR(archive_path), -1);
     if(return_code)
         rb_raise(rb_eException, "Error opening %s. Code: %d", archive_path, return_code);

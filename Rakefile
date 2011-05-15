@@ -17,8 +17,11 @@ Jeweler::Tasks.new do |gem|
   gem.name = "ruby-libmpq"
   gem.homepage = "http://github.com/perrym5/ruby-libmpq"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Ruby wrapper around the libmpq C library}
+  gem.description = %Q{
+    Ruby wrapper around the libmpq C library. Simplified
+    access to reading files from MPQ archives.
+  }
   gem.email = "perrym5@rpi.edu"
   gem.authors = ["Matthew Perry"]
   # dependencies defined in Gemfile
