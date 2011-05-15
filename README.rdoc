@@ -14,6 +14,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 Matthew Perry. See LICENSE.txt for
+Copyright (c) 2011 Agora Games. See LICENSE.txt for
 further details.
 
