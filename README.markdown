@@ -1,9 +1,9 @@
-= ruby-libmpq
+# ruby-libmpq
 
-Description goes here.
+ruby-libmpq is a gem for reading and manipulating Blizzard MPQ files. This gem is based heavily on [this one](https://github.com/beaucollins/libmpq-ruby). I felt it needed some
 
-== Contributing to ruby-libmpq
- 
+## Contributing to ruby-libmpq
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
 * Fork the project
@@ -12,7 +12,7 @@ Description goes here.
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-== Copyright
+## Copyright
 
 Copyright (c) 2011 Agora Games. See LICENSE.txt for
 further details.
