@@ -1,14 +1,17 @@
 require 'mpq_read'
 
-class MPQ::Archive
-  attr_reader :path
-  LISTFILE = "(listfile)"
+module MPQ
+  class Archive
+    attr_reader :path, :files
+    LISTFILE = "(listfile)"
 
-  def initialize(path)
-    @path = path
-  end
+    def initialize(path)
+      raise LoadError, "#{path.inspect} not found" unless File.exists? path
+      @path = path
+    end
 
-  def list_files
-    read_file(LISTFILE).split("\r\n")
+    def files
+      @files ||= read_file(LISTFILE).split("\r\n")
+    end
   end
 end
