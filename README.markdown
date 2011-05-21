@@ -1,6 +1,6 @@
 # ruby-libmpq
 
-ruby-libmpq is a gem for reading and manipulating Blizzard MPQ files. This gem is based heavily on [this one](https://github.com/beaucollins/libmpq-ruby). I felt it needed some
+ruby-libmpq is a gem for reading and manipulating Blizzard MPQ files. This gem is based on [this one](https://github.com/beaucollins/libmpq-ruby).
 
 ## Contributing to ruby-libmpq
 
