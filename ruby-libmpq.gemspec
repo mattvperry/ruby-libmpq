@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Matthew Perry"]
-  s.date = %q{2011-05-15}
+  s.date = %q{2011-05-21}
   s.description = %q{
     Ruby wrapper around the libmpq C library. Simplified
     access to reading files from MPQ archives.
@@ -18,14 +18,14 @@ Gem::Specification.new do |s|
   s.extensions = ["ext/extconf.rb"]
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.markdown"
   ]
   s.files = [
     ".document",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.markdown",
     "Rakefile",
     "VERSION",
     "ext/extconf.rb",
