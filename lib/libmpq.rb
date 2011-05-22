@@ -15,7 +15,7 @@ module MPQ
     end
 
     def each_with_data(&block)
-      @files.each do |file_name|
+      files.each do |file_name|
         block.call(file_name, read_file(file_name))
       end
     end
