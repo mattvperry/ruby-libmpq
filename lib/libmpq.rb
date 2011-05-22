@@ -13,5 +13,11 @@ module MPQ
     def files
       @files ||= read_file(LISTFILE).split("\r\n")
     end
+
+    def each_with_data(&block)
+      @files.each do |file_name|
+        block.call(file_name, read_file(file_name))
+      end
+    end
   end
 end
